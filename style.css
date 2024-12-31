@@ -1,0 +1,328 @@
+body{
+    background-color: rgb(150, 144, 144);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-content: center;
+
+}
+
+/* Header Container */
+.header {
+    display: flex; /* Arrange items in a row */
+    justify-content: flex-end; /* Space between content on the left and right */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px; /* Add space inside the header */
+    background-color: #333; /* Background color for the header */
+    color: white; /* Text color */
+    position: relative; /* For absolute positioning inside */
+    flex-wrap: wrap;
+  }
+  
+  /* Buttons */
+  .header button {
+    background-color: transparent; /* Transparent background for header buttons */
+    color: white; /* Text color */
+    border: none; /* Remove borders */
+    padding: 10px 15px; /* Add padding inside the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the buttons */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+   button:hover, .disclamer-btn button:hover{
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  /* Hamburger Menu */
+  .hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stacked bars */
+    cursor: pointer;
+  }
+  .hamburger-menu,
+.media-icons {
+    display: block !important;
+}
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  /* Media Icons */
+  .media-icons {
+    display: flex; /* Arrange icons in a row */
+    gap: 10px; /* Space between icons */
+  }
+  
+  .media-icons a {
+    color: white; /* Icon color */
+    font-size: 18px; /* Icon size */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .media-icons a:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+  .fi{
+    color: aliceblue;
+  }
+  /* Position "Subarna Gautam" Button */
+  .header-btn {
+    position: absolute; /* Place it absolutely */
+    left: 20px; /* Adjust the left offset */
+    font-weight: bold; /* Bold text for emphasis */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: flex; /* Show hamburger menu */
+    }
+  
+    .header button {
+      display: none; /* Hide buttons */
+    }
+  
+    .media-icons {
+      display: none; /* Hide media icons */
+    }
+  }
+
+  .body1{
+    background-image: url(sources/IMG_2684.jpg);
+    background-size:cover;
+    background-repeat: repeat;
+    background-position:center;
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body1 button{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    width: 50;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
+
+
+}
+.body2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.body2about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.body2 button{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    width: 50;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
+
+
+}
+.body2recepie {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+
+    justify-content: center;
+
+    align-items: center;
+    margin-left: 30px;
+    margin-left: 30px;
+
+}
+.recepie-item{
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    width: 100%; /* Set a fixed width for each item */
+    background-color: #fff; /* White background for individual items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    text-align: center; /* Center text */
+
+
+}
+.recepie-item img {
+    max-width: 100%; /* Image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+
+    border-bottom: 2px solid #ccc; /* Divider below the image */
+}
+.recepie-details{
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding inside the details */
+    text-align: center; /* Center-align text */
+    
+}
+
+
+.recepie-details button{
+    padding: 15px;
+    width:15rem;
+}
+.body3{
+    margin-top: 20px;
+}
+
+.body-3{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
+    gap: 10px;
+    justify-content: center;
+    align-content: center; 
+}
+
+.body-3 div{
+    border: 2px solid black;
+    outline: 10px solid rgb(223, 201, 201);
+    background-color: rgb(108, 134, 108);
+    text-align: center;
+    padding: 10px;
+    align-content: center;
+    }
+
+.body-4{
+     display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
+        gap: 10px;
+        justify-content: center;
+        align-content: center; 
+    }
+    
+.body-4 div{
+        border: 2px solid black;
+        outline: 10px solid rgb(223, 201, 201);
+        background-color: rgb(108, 134, 108);
+        text-align: center;
+        padding: 10px;
+        align-content: center;
+        }
+
+.body-5{
+            display: grid;
+            grid-template-columns:2fr, 3fr, 2fr, 1fr, 1fr, 2fr;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
+            gap: 10px;
+            justify-content: center;
+            align-content: center; 
+        }
+        
+.body-5 div{
+            border: 2px solid black;
+            outline: 10px solid rgb(223, 201, 201);
+            background-color: rgb(108, 134, 108);
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            }
+.body-6{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
+                gap: 10px;
+                justify-content: center;
+                align-content: center; 
+                margin-bottom: 20px;
+            }
+            
+.body-6 div{
+                border: 2px solid black;
+                outline: 10px solid rgb(223, 201, 201);
+                background-color: rgb(239, 204, 177);
+                text-align: center;
+                padding: 10px;
+                align-content: center;
+                }
+
+
+.disclamer{
+    background-color:#333;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.disclamer .media-icons{
+    padding: 10px 15px;
+}
+.disclamer-btn button{
+    background-color: transparent; /* Transparent background for header buttons */
+    color: white; /* Text color */
+    border: none; /* Remove borders */
+    padding: 10px 15px; /* Add padding inside the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the buttons */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+  }
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    height: 30px;
+    color: aliceblue;
+    font-size: 10px;
+}
+body#experience-body{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+  
+}
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
