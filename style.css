@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(150, 144, 144);
-    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace
     font-weight: bold;
     align-content: center;
 
@@ -14,8 +14,10 @@ body{
     padding: 10px 20px; /* Add space inside the header */
     background-color: #333; /* Background color for the header */
     color: white; /* Text color */
-    position: relative; /* For absolute positioning inside */
+    position: absolute; /* For absolute positioning inside */
     flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0;
   }
   
   /* Buttons */
@@ -103,21 +105,39 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .body1 button{
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 2px;
+    
     width: 50;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.498);
     font-weight: bold;
     font-size: 1rem;
 
+}
+.arrow{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  
+}
+.arrow-prev{
+  position: absolute;
+  left: 10px;
+}
+.arrow-next{
+  position: absolute;
+  right: 10px;
+}
 
+.body1-h1, .body1-h2, .body1-p{
+  background-color: #ffffff76;
+  
 }
 .body2{
     display: flex;
@@ -194,79 +214,15 @@ body{
     padding: 15px;
     width:15rem;
 }
-.body3{
-    margin-top: 20px;
-}
 
-.body-3{
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
-    gap: 10px;
-    justify-content: center;
-    align-content: center; 
-}
 
-.body-3 div{
-    border: 2px solid black;
-    outline: 10px solid rgb(223, 201, 201);
-    background-color: rgb(108, 134, 108);
-    text-align: center;
-    padding: 10px;
-    align-content: center;
-    }
 
-.body-4{
-     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
-        gap: 10px;
-        justify-content: center;
-        align-content: center; 
-    }
-    
-.body-4 div{
-        border: 2px solid black;
-        outline: 10px solid rgb(223, 201, 201);
-        background-color: rgb(108, 134, 108);
-        text-align: center;
-        padding: 10px;
-        align-content: center;
-        }
 
-.body-5{
-            display: grid;
-            grid-template-columns:2fr, 3fr, 2fr, 1fr, 1fr, 2fr;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
-            gap: 10px;
-            justify-content: center;
-            align-content: center; 
-        }
+
+
         
-.body-5 div{
-            border: 2px solid black;
-            outline: 10px solid rgb(223, 201, 201);
-            background-color: rgb(108, 134, 108);
-            text-align: center;
-            padding: 10px;
-            align-content: center;
-            }
-.body-6{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
-                gap: 10px;
-                justify-content: center;
-                align-content: center; 
-                margin-bottom: 20px;
-            }
-            
-.body-6 div{
-                border: 2px solid black;
-                outline: 10px solid rgb(223, 201, 201);
-                background-color: rgb(239, 204, 177);
-                text-align: center;
-                padding: 10px;
-                align-content: center;
-                }
+
 
 
 .disclamer{
@@ -292,14 +248,15 @@ body{
 
 
 .footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #333;
+    position:absolute;
+    bottom: 4;
+    left: 40px;
+    
+
     width: 100%;
-    height: 30px;
-    color: aliceblue;
-    font-size: 10px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
 }
 body#experience-body{
     display: flex;
