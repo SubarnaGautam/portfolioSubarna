@@ -1,0 +1,94 @@
+@media (max-width: 768px) {
+    .hamburger-menu {
+      display: flex;
+      margin-right: 1rem;
+      font-size: 0.3rem; /* Show hamburger menu */
+    }
+  
+    .header  {
+      display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.4rem;
+        position:static;
+       /* Hide buttons */
+    }
+    .header button{
+        padding: 0.1rem;
+        display: flex;
+        font-size: 0.6rem;
+        gap: 0.4rem;
+    }
+    .header-btn{
+
+        display: none !important;
+       
+    }
+    
+    .header .media-icons .fab{
+        font-size: 0.7rem;
+    
+        gap: 0.3rem;
+        margin-top: 0.5rem;
+    }}
+  
+   /* Hide media icons */
+    
+  
+
+  @media (max-width: 768px){
+    body{
+      width: 100%;
+    }
+   
+    .body1{
+   
+      margin-top: 3rem;
+    }
+    .body1-h1, .body1-h2, .body1-p{
+      background-color: none;
+      background-color: rgba(127, 255, 212, 0.336);
+      
+    }
+    .body1 button{
+    background-color: rgba(127, 255, 212, 0.383);
+
+      border: none;
+      color: aliceblue;
+    }
+    .body1-p{
+        width: 60%;
+    }
+}
+@media (max-width: 768px){
+
+    .body2{
+        margin-top: 1rem;
+        width: 100%;
+      }
+      .body2recepie{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+}
+@media (max-width: 768px){
+    .disclamer{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .disclamer-btn button{
+     
+     
+        padding: 0.1rem;
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+    }
+    .disclamer .media-icons .fab{
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+
+    }
+}
